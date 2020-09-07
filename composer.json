@@ -1,0 +1,20 @@
+{
+  "name": "welsipieters/heartbreak",
+  "description": "A thing I made",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Wesley",
+      "email": "wesley@baqon.agency"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Heartbreak\\": "src/"
+    }
+  },
+  "require": {
+    "ext-json": "*"
+  }
+}
