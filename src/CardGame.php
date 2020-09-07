@@ -73,7 +73,7 @@ final class CardGame
         $amountOfCardsPerPlayer = floor(32 / $this->playerCollection->count());
 
         if ($this->currentRound % $amountOfCardsPerPlayer === 0) {
-            print 'Players ran out of cards. Reshuffle.';
+            print "\r\nPlayers ran out of cards. Reshuffle.\r\n";
             $this->reshuffle();
         }
 
