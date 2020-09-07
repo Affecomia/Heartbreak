@@ -56,7 +56,7 @@ final class CardCollection
         try {
             $arrayData = $this->dataStore->getById($id);
         } catch (OutOfBoundsException $e) {
-            throw new OutOfBoundsException(sprintf('Card with id %d does not exist', $id), 0, $e);
+            throw new OutOfBoundsException(sprintf('Cards with id %d does not exist', $id), 0, $e);
         }
 
         return Card::fromState($arrayData);
