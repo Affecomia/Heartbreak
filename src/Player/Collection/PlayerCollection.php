@@ -59,7 +59,7 @@ final class PlayerCollection
 
     public function shiftBeginningPlayer(): void
     {
-        $id = array_pop($this->order);
+        $id = array_shift($this->order);
         array_push($this->order, $id);
     }
 
